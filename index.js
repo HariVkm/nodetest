@@ -17,6 +17,7 @@ mongoose.connect(process.env.mongooseurl).then(()=>{
 }).catch((error)=>{
     console.log(error.message);
 })
+console.log("hello hai everuone");
 app.use(express.json())
 app.use('/api',userRouter)
 app.use('/api/auth',Authrouter)
